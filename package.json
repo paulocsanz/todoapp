@@ -1,0 +1,23 @@
+{
+  "name": "todolist-monorepo",
+  "version": "1.0.0",
+  "description": "A TypeScript todo list application monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run --recursive build",
+    "start": "pnpm run --parallel start",
+    "backend:dev": "pnpm --filter backend dev",
+    "frontend:dev": "pnpm --filter frontend dev",
+    "backend:build": "pnpm --filter backend build",
+    "frontend:build": "pnpm --filter frontend build",
+    "install:all": "pnpm install",
+    "clean": "pnpm run --recursive clean"
+  },
+  "keywords": ["typescript", "react", "nodejs", "postgresql", "monorepo"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
